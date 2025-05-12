@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YSRTCMinuteSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "EZVIZ 会议纪要SDK YSRTCMinuteSDK."
 
   # This description is used to generate tags and improve search results.
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files = "YSRTCMinuteXSDK.framework/Headers/*.{h,m}"
+  # spec.source_files = "YSRTCMinuteSDK/Depend/YSRTCMinuteXSDK.framework/Headers/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -105,8 +105,9 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-  spec.resource  = "YSRTCMinuteSDK/Depend/*.bundle"
+  spec.resource = 'YSRTCMinuteSDK/Depend/YSRTCMinuteXSDKBundle.bundle'
+  # spec.resources = ['YSRTCMinuteSDK/Depend/YSRTCMinuteXSDKBundle.bundle']
+  # spec.resource  = "YSRTCMinuteSDK/Depend/*.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
