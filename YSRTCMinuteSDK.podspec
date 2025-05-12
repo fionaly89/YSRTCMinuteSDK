@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YSRTCMinuteSDK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "EZVIZ 会议纪要SDK YSRTCMinuteSDK."
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "EZVIZ 会议纪要SDK YSRTCMinuteSDK 简要说明."
 
-  spec.homepage     = "https://mixlink.com"
+  spec.homepage     = "https://github.com/fionaly89/YSRTCMinuteSDK"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -105,7 +105,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resource = 'YSRTCMinuteSDK/Depend/YSRTCMinuteXSDKBundle.bundle'
+  spec.resource = 'YSRTCMinuteSDK/Resources/YSRTCMinuteXSDKBundle.bundle'
   # spec.resources = ['YSRTCMinuteSDK/Depend/YSRTCMinuteXSDKBundle.bundle']
   # spec.resource  = "YSRTCMinuteSDK/Depend/*.bundle"
 
@@ -118,12 +118,15 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.framework  = "Foundation", "UIKit"
+  spec.static_framework = true
+  # spec.framework  = "Foundation", "UIKit"
+  spec.weak_frameworks = 'SystemConfiguration', 'Accelerate', 'AVFoundation', 'QuartzCore', 'CoreGraphics', 'CoreMedia', 'CoreAudio', 'CoreVideo', 'CoreML', 'OpenGLES', 'Security', 'CFNetwork', 'UIKit', 'Foundation', 'CoreTelephony'
   # 依赖本地Frameworks库
   spec.vendored_frameworks = 'YSRTCMinuteSDK/Depend/*.framework'
 
   spec.dependency 'AFNetworking'
   spec.dependency 'Masonry'
+  spec.dependency 'SSZipArchive'
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
