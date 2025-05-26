@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YSRTCMinuteExpressEngine : NSObject
 
++ (YSRTCMinuteExpressEngine *)sharedEngine;
+
 /// 初始化SDK配置
 /// - Parameters:
 ///   - profile: 配置项
@@ -21,9 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
                 eventDelegate:(nullable id<YSRTCMinuteEngineDelegate>)eventDelegate;
 
 /// 释放SDK
-+ (void)destroyEngine;
-
-+ (YSRTCMinuteExpressEngine *)sharedEngine;
+- (void)destroyEngine;
 
 /// 展示会议纪要页面
 /// - Parameters:

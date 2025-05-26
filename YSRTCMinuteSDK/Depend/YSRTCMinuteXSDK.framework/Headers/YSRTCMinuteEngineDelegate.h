@@ -10,7 +10,7 @@
 
 @protocol YSRTCMinuteEngineDelegate <NSObject>
 
-//sdk登出
+//sdk登出通知
 - (void)onSdkLogOut;
 
 @optional

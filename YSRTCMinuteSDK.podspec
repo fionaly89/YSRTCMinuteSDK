@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YSRTCMinuteSDK"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.5"
   spec.summary      = "EZVIZ 会议纪要SDK YSRTCMinuteSDK."
 
   # This description is used to generate tags and improve search results.
