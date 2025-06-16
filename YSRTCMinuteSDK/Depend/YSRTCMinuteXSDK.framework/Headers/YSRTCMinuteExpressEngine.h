@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YSRTCMinuteExpressEngine : NSObject
 
-+ (YSRTCMinuteExpressEngine *)sharedEngine;
+@property (nonatomic, assign, readonly) BOOL runingMeeting;
+
 
 /// 初始化SDK配置
 /// - Parameters:
@@ -21,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - eventDelegate: 回调代理
 + (void)initEngineWithProfile:(YSRTCMinuteEngineProfile *)profile
                 eventDelegate:(nullable id<YSRTCMinuteEngineDelegate>)eventDelegate;
+
+// 有没有进行中的纪要  YES：有进行中的纪要  NO：没有进行中的纪要
++ (YSRTCMinuteExpressEngine *)sharedEngine;
 
 /// 释放SDK
 - (void)destroyEngine;
