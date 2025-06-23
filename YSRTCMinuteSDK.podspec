@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YSRTCMinuteSDK"
-  spec.version      = "1.0.7"
+  spec.version      = "1.0.8"
   spec.summary      = "EZVIZ 会议纪要SDK YSRTCMinuteSDK."
 
   # This description is used to generate tags and improve search results.
@@ -94,6 +94,7 @@ Pod::Spec.new do |spec|
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
+  spec.source_files = "YSRTCMinuteSDK/Depend/YSRTCMinuteXSDK.framework/Headers/*.{h,m}"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
