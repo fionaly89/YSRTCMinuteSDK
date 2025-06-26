@@ -13,8 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YSRTCMinuteExpressEngine : NSObject
 
+
+// 有没有进行中的纪要  YES：有进行中的纪要  NO：没有进行中的纪要
 @property (nonatomic, assign, readonly) BOOL runingMeeting;
 
++ (YSRTCMinuteExpressEngine *)sharedEngine;
 
 /// 初始化SDK配置
 /// - Parameters:
@@ -23,8 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)initEngineWithProfile:(YSRTCMinuteEngineProfile *)profile
                 eventDelegate:(nullable id<YSRTCMinuteEngineDelegate>)eventDelegate;
 
-// 有没有进行中的纪要  YES：有进行中的纪要  NO：没有进行中的纪要
-+ (YSRTCMinuteExpressEngine *)sharedEngine;
 
 /// 释放SDK
 - (void)destroyEngine;
@@ -39,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
                           navi:(UINavigationController *)navi
                successCallback:(void(^)(UIViewController *vc))successFn
                   failCallBack:(void(^)(NSError *error))failFn;
+
 
 @end
 

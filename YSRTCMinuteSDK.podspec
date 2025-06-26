@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YSRTCMinuteSDK"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "EZVIZ 会议纪要SDK YSRTCMinuteSDK."
 
   # This description is used to generate tags and improve search results.
@@ -128,6 +128,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'AFNetworking'
   spec.dependency 'Masonry'
   spec.dependency 'SSZipArchive'
+  spec.dependency 'CocoaLumberjack'
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"

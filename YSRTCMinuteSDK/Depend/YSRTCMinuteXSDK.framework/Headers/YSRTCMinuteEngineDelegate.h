@@ -26,6 +26,8 @@
 
 - (void)onYSRTCMinuteAuthNullCallBack:(void(^)(NSString *token))refreshSuccessCallback;
 
+
+
 @end
 
 #endif /* YSRTCMinuteEngineDelegate_h */
