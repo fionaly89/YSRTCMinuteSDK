@@ -26,7 +26,7 @@
 
 - (void)onYSRTCMinuteAuthNullCallBack:(void(^)(NSString *token))refreshSuccessCallback;
 
-
+- (void)onYSRTCMinuteAuthShareChannelData:(id)shareData;
 
 @end
 
