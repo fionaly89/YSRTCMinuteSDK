@@ -41,6 +41,16 @@ NS_ASSUME_NONNULL_BEGIN
                successCallback:(void(^)(UIViewController *vc))successFn
                   failCallBack:(void(^)(NSError *error))failFn;
 
+/// 发起会议纪要
+/// - Parameters:
+///   - token: 会议纪要sdk token
+///   - navi: 当前导航控制器
+///   - successFn: 成功回调
+///   - failFn: 失败回调
+- (void)startMeetingMinutes:(NSString *)token
+                       navi:(UINavigationController *)navi
+            successCallback:(void(^)(UIViewController *vc))successFn
+               failCallBack:(void(^)(NSError *error))failFn;
 
 @end
 
