@@ -52,6 +52,9 @@ NS_ASSUME_NONNULL_BEGIN
             successCallback:(void(^)(UIViewController *vc))successFn
                failCallBack:(void(^)(NSError *error))failFn;
 
+///开启应用内小窗口模式
+- (void)startInAppWindow;
+
 @end
 
 NS_ASSUME_NONNULL_END
