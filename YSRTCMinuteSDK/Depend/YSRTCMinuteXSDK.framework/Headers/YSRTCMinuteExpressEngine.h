@@ -41,6 +41,19 @@ NS_ASSUME_NONNULL_BEGIN
                successCallback:(void(^)(UIViewController *vc))successFn
                   failCallBack:(void(^)(NSError *error))failFn;
 
+/// 展示会议纪要详情页面
+/// - Parameters:
+///   - token: 会议纪要sdk token
+///   - navi: 当前导航控制器
+///   - data: 纪要信息
+///   - successFn: 成功回调
+///   - failFn: 失败回调
+- (void)showMeetingMinutesInfoPage:(NSString *)token
+                              navi:(UINavigationController *)navi
+                              data:(NSDictionary *)data
+                   successCallback:(void(^)(UIViewController *vc))successFn
+                      failCallBack:(void(^)(NSError *error))failFn;
+
 /// 发起会议纪要
 /// - Parameters:
 ///   - token: 会议纪要sdk token
