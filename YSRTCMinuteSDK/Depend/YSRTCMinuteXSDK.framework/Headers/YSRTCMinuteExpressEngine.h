@@ -65,6 +65,17 @@ NS_ASSUME_NONNULL_BEGIN
             successCallback:(void(^)(UIViewController *vc))successFn
                failCallBack:(void(^)(NSError *error))failFn;
 
+/// 强制发起会议纪要（若存在未结束的录制，会先结束旧的再开启新的）
+/// - Parameters:
+///   - token: 会议纪要sdk token
+///   - navi: 当前导航控制器
+///   - successFn: 成功回调
+///   - failFn: 失败回调
+- (void)forceStartMeetingMinutes:(NSString *)token
+                            navi:(UINavigationController *)navi
+                 successCallback:(void(^)(UIViewController *vc))successFn
+                    failCallBack:(void(^)(NSError *error))failFn;
+
 ///开启应用内小窗口模式
 - (void)startInAppWindow;
 
